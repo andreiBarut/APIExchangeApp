@@ -85,6 +85,16 @@
   left: 10vw;
 }
 
+#amount {
+  width: 16%;
+}
+
+.jumbotron-input {
+  height: 2rem;
+  border-radius: 10px;
+  border: 0;
+}
+
 html {
   font-family: "Inter", sans-serif;
 }
