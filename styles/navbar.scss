@@ -10,12 +10,19 @@
 
 .navbar li {
       padding: 3vh 0;
-      border: 2px solid red;
       width: 12vw;
+      border-top: 5px solid #D7C481;
       border-radius: 5%;
       text-align: center;
+      background-color: #262626;
+}
+
+.navbar li:hover {
+      background-color: #484848;
+      transition: 0.3s ease-in-out;
 }
 
 .navbar a {
       text-decoration: none;
+      color: #D1D1D1;
 }

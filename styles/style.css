@@ -1,10 +1,11 @@
+@import url("https://rsms.me/inter/inter.css");
 .jumbotron {
-  border: 2px solid red;
-  width: 80vw;
-  height: 40vh;
+  width: 45vw;
+  height: 50vh;
   margin: 0 auto;
   margin-top: 2vh;
   border-radius: 2%;
+  background-color: #DDDDDD;
 }
 
 .navbar {
@@ -17,25 +18,35 @@
 
 .navbar li {
   padding: 3vh 0;
-  border: 2px solid red;
   width: 12vw;
+  border-top: 5px solid #D7C481;
   border-radius: 5%;
   text-align: center;
+  background-color: #262626;
+}
+
+.navbar li:hover {
+  background-color: #484848;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar a {
   text-decoration: none;
+  color: #D1D1D1;
 }
 
 #currency-container {
-  height: 25vh;
-  width: 80vw;
+  height: 15vh;
+  width: 40vw;
   overflow-y: scroll;
-  padding: 10px;
+  padding: 2vh;
   margin: 0 auto;
-  border: 2px solid red;
+  text-align: center;
   border-radius: 2%;
   margin-top: 2vh;
+  color: #D1D1D1;
+  background-color: #262626;
+  opacity: 0.9;
 }
 
 #currency-container::-webkit-scrollbar {
@@ -43,19 +54,54 @@
 }
 
 #currency-container::-webkit-scrollbar-track {
-  background: rgb(198, 198, 198); /* color of the tracking area */
+  background: #DDDDDD; /* color of the tracking area */
 }
 
 #currency-container::-webkit-scrollbar-thumb {
-  background-color: black; /* color of the scroll thumb */
+  background-color: #262626; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
-  border: 3px solid yellow; /* creates padding around scroll thumb */
+  border: 3px solid #D7C481; /* creates padding around scroll thumb */
 }
 
+.yellow-container {
+  position: absolute;
+  top: 45vh;
+  height: 40vh;
+  width: 100vw;
+  background-color: #D7C481;
+  z-index: -1;
+  background-image: url("../img/line-vector-pattern.png");
+}
+
+.footer {
+  color: #D1D1D1;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.logo {
+  position: absolute;
+  height: 50px;
+  left: 10vw;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #191919;
 }
 
 body div:nth-child(3) > h2 {

@@ -9,6 +9,7 @@
 </head>
 <body>
       <!--^ TODAY'S EXCHANGE RATE-->
+      <img src="img/exchange-logo.png" alt="exchange logo" class="logo">
       <div>
             <ul class="navbar">
                   <li>
@@ -34,14 +35,28 @@
             </ul>
       </div>
       <div class="container jumbotron">
-            jumbotron
+            <h2>TODAY'S RATE FOR USD</h2>
+            <input type="number" id="amount">
+            <br>
+            <input type="text" id="from-currency">
+            <br>
+            <input type="text" id="to-currency">
+            <img src="img/convert-button.png" alt="convert button">
+            <p>100 USD</p>
+            <p>-></p>
+            <p>498.012 RON</p>
+
       </div>
       <div class="container">
-            <h2>TODAY'S RATE FOR RON</h2>
-            <div id="currency-container"></div>
+            
+            <div id="currency-container">
+                  <h2>TODAY'S RATE FOR RON</h2>
+            </div>
       </div>
-      
-      
+
+      <div class="yellow-container"></div>
+      <div class="footer">Website made with Exchange Rate API <br>Andrei Barut © 2022</div>
+           
       <script src="exchange-script.js"></script>
 </body>
 </html>
