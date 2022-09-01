@@ -1,7 +1,15 @@
-
+@import 'jumbotron.scss';
+@import 'navbar.scss';
+@import 'currency-container.scss';
+@import 'variables.scss';
 
 * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
 }
+
+body div:nth-child(3) > h2 {
+      text-align: center;
+}
+

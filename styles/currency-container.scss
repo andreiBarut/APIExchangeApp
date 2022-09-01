@@ -1,0 +1,25 @@
+@import 'variables.scss';
+
+#currency-container {
+      height: 25vh;
+      width: 80vw;
+      overflow-y: scroll;
+      padding: 10px;
+      margin: 0 auto;
+      border: 2px solid red;
+      margin-top: $defaultTopMargin;
+}
+
+#currency-container::-webkit-scrollbar {
+      width: 12px;               /* width of the entire scrollbar */
+}
+//! we will have to modify these colors to correspond to the figma design
+#currency-container::-webkit-scrollbar-track {
+      background: rgb(198, 198, 198);        /* color of the tracking area */
+}
+
+#currency-container::-webkit-scrollbar-thumb {
+      background-color: black;    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+      border: 3px solid yellow;  /* creates padding around scroll thumb */
+}

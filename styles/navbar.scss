@@ -1,0 +1,15 @@
+@import 'variables.scss';
+
+.navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      gap: 1vw;
+      margin-top: $defaultTopMargin;
+}
+
+.navbar li {
+      padding: 3vh 0;
+      border: 2px solid red;
+}

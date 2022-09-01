@@ -1,0 +1,9 @@
+@import 'variables.scss';
+
+.jumbotron {
+      border: 2px solid red;
+      width: 80vw;
+      height: 40vh;
+      margin: 0 auto;
+      margin-top: $defaultTopMargin;
+}
