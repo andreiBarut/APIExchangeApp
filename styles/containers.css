@@ -43,4 +43,12 @@
   background-color: #D7C481;
   z-index: -1;
   background-image: url("../img/line-vector-pattern.png");
+}
+
+.container, .jumbotron {
+  display: flex;
+}
+
+#convert-img {
+  height: 20px;
 }/*# sourceMappingURL=containers.css.map */

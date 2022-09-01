@@ -2,6 +2,14 @@
   width: 16%;
 }
 
+#from-currency {
+  width: 5%;
+}
+
+#to-currency {
+  width: 5%;
+}
+
 .jumbotron-input {
   height: 2rem;
   border-radius: 10px;

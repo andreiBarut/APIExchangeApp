@@ -73,6 +73,14 @@
   background-image: url("../img/line-vector-pattern.png");
 }
 
+.container, .jumbotron {
+  display: flex;
+}
+
+#convert-img {
+  height: 20px;
+}
+
 .footer {
   color: #D1D1D1;
   text-align: center;
@@ -87,6 +95,14 @@
 
 #amount {
   width: 16%;
+}
+
+#from-currency {
+  width: 5%;
+}
+
+#to-currency {
+  width: 5%;
 }
 
 .jumbotron-input {
