@@ -2,9 +2,9 @@
 
 //! here we will use the input from the user 
 const currencyContainer = document.getElementById("currency-container");
-let requestURL = `https://api.exchangerate.host/latest?base=RON`;
+const requestURL1 = `https://api.exchangerate.host/latest?base=RON`;
 const request = new XMLHttpRequest();
-request.open('GET', requestURL);
+request.open('GET', requestURL1);
 request.responseType = 'json';
 request.send();
 
@@ -18,8 +18,9 @@ request.onload = function() {
     currencyContainer.appendChild(p);
     
   }
-
 }
+
+
 
 
 
