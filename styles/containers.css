@@ -24,4 +24,23 @@
   background-color: #262626; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid #D7C481; /* creates padding around scroll thumb */
-}/*# sourceMappingURL=currency-container.css.map */
+}
+
+.jumbotron {
+  width: 45vw;
+  height: 50vh;
+  margin: 0 auto;
+  margin-top: 2vh;
+  border-radius: 2%;
+  background-color: #DDDDDD;
+}
+
+.yellow-container {
+  position: absolute;
+  top: 45vh;
+  height: 40vh;
+  width: 100vw;
+  background-color: #D7C481;
+  z-index: -1;
+  background-image: url("../img/line-vector-pattern.png");
+}/*# sourceMappingURL=containers.css.map */
