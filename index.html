@@ -35,19 +35,23 @@
             </ul>
       </div>
       <div class="container jumbotron">
-            <div class="container">
-                  <h2>TODAY'S RATE FOR USD</h2>
-                  <input type="number" id="amount" class="jumbotron-input">
-                  <input type="text" id="from-currency" class="jumbotron-input">
-                  <br>
-                  <input type="text" id="to-currency" class="jumbotron-input">
-                  <img src="img/convert-button.png" alt="convert button" id="convert-img">
-                  <p>100 USD</p>
-                  <p>-></p>
-                  <p>498.012 RON</p>
+            <div class="jumb-container">
+                  <h4>TODAY'S RATE FOR USD</h4>
+                  <div id="converter-container">
+                        <input type="number" id="amount" class="jumbotron-input">
+                        <input type="text" id="from-currency" class="jumbotron-input">
+                        <span class="convert-arrow">-></span>
+                        <input type="text" id="to-currency" class="jumbotron-input">
+                        <img src="img/convert-button.png" alt="convert button" id="convert-img">
+                  </div>
+                  <div id="converted-container">
+                        <p>100 USD</p>
+                        <p class="convert-arrow">-></p>
+                        <p>498.012 RON</p>
+                  </div>
             </div>
-            <div class="container">
-                  here will be the image 
+            <div class="jumb-container">
+                  <img src="img/exchange-1.png" alt="exchange picture" id="exchange-1">
             </div>
             
 
@@ -60,7 +64,7 @@
       </div>
 
       <div class="yellow-container"></div>
-      <div class="footer">Website made with Exchange Rate API <br>Andrei Barut © 2022</div>
+      <div class="footer">Website made with Exchange Rate API <br> Andrei Barut © 2022</div>
            
       <script src="exchange-script.js"></script>
 </body>

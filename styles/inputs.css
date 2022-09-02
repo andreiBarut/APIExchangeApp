@@ -1,13 +1,13 @@
 #amount {
-  width: 16%;
+  width: 100px;
 }
 
 #from-currency {
-  width: 5%;
+  width: 40px;
 }
 
 #to-currency {
-  width: 5%;
+  width: 40px;
 }
 
 .jumbotron-input {

@@ -50,8 +50,48 @@
 .container,.jumbotron {
       display: flex;
       
+      
 }
 
 #convert-img {
-      height: 20px;
+      height: 40px;
 }
+
+.jumb-container {
+      padding-top: 5vh;
+}
+
+.jumb-container > h4 {
+      text-align: center;
+      font-weight: 500;
+}
+
+.jumb-container:first-child {
+      width: 50%;
+}
+
+.jumb-container:nth-child(2) {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+}
+
+#converter-container {
+      text-align: center;
+      padding: 8vh 0 8vh 0;
+      display: flex;
+      justify-content: space-evenly;
+}
+
+#converted-container {
+      text-align: center;
+      padding: 0 0 8vh 0;
+}
+
+#exchange-1 {
+      height: 70%;
+}
+
+
