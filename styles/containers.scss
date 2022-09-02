@@ -29,8 +29,8 @@
 }
 
 .jumbotron {
-      width: 45vw;
-      height: 50vh;
+      width: 45%;
+      height: 50%;
       margin: 0 auto;
       margin-top: $defaultTopMargin;
       border-radius: 10px;
@@ -48,9 +48,8 @@
 }
 
 .container,.jumbotron {
-      display: flex;
-      
-      
+      display: flex;    
+      flex-direction: row;
 }
 
 #convert-img {
@@ -82,6 +81,7 @@
       text-align: center;
       padding: 8vh 0 8vh 0;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-evenly;
 }
 
