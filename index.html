@@ -6,10 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Currency Exchange App</title>
       <link rel="stylesheet" href="styles/style.css">
+      <link rel="icon" href="img/exchange-logo.png">
 </head>
 <body>
+      <!--! ADD COMMENTS ! -->
       <!--^ TODAY'S EXCHANGE RATE-->
       <img src="img/exchange-logo.png" alt="exchange logo" class="logo">
+
       <div>
             <ul class="navbar">
                   <li>
@@ -34,6 +37,7 @@
                   </li>
             </ul>
       </div>
+
       <div class="container jumbotron">
             <div class="jumb-container">
                   <h4>TODAY'S RATE FOR USD</h4>
@@ -42,7 +46,7 @@
                         <input type="text" id="from-currency" class="jumbotron-input">
                         <span class="convert-arrow">-></span>
                         <input type="text" id="to-currency" class="jumbotron-input">
-                        <img src="img/convert-button.png" alt="convert button" id="convert-img">
+                        <img src="img/convert-button.png" alt="convert button" id="convert-img" onclick="convert()" title="click to convert">
                   </div>
                   <div id="converted-container">
                         <p>100 USD</p>
@@ -52,12 +56,10 @@
             </div>
             <div class="jumb-container">
                   <img src="img/exchange-1.png" alt="exchange picture" id="exchange-1">
-            </div>
-            
-
+            </div> 
       </div>
+
       <div class="container">
-            
             <div id="currency-container">
                   <h2>TODAY'S RATE FOR RON</h2>
             </div>
