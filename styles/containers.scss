@@ -7,7 +7,7 @@
       padding: 2vh;
       margin: 0 auto;
       text-align: center;
-      border-radius: 2%;
+      border-radius: 10px;
       margin-top: $defaultTopMargin;
       color: #D1D1D1;
       background-color: #262626;
@@ -24,7 +24,7 @@
 
 #currency-container::-webkit-scrollbar-thumb {
       background-color: #262626;    /* color of the scroll thumb */
-      border-radius: 20px;       /* roundness of the scroll thumb */
+      border-radius: 10px;       /* roundness of the scroll thumb */
       border: 3px solid #D7C481;  /* creates padding around scroll thumb */
 }
 
@@ -33,7 +33,7 @@
       height: 50vh;
       margin: 0 auto;
       margin-top: $defaultTopMargin;
-      border-radius: 2%;
+      border-radius: 10px;
       background-color: #DDDDDD;
 }
 
