@@ -223,4 +223,8 @@ body div:nth-child(3) > h2 {
 .convert-arrow {
   font-size: 2rem;
   font-weight: bolder;
+}
+
+#hidden-arrow {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

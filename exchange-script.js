@@ -1,5 +1,7 @@
 //^ INDEX FUNCTIONALITY - TODAY'S RATE
 
+//^CURRENCY CONTAINER (this is after the convert functionality)
+
 //! here we will use the input from the user 
 const currencyContainer = document.getElementById("currency-container");
 const requestURL1 = `https://api.exchangerate.host/latest?base=RON`;
@@ -19,6 +21,44 @@ request.onload = function() {
     
   }
 }
+
+//^ CONVERT FUNCTIONALITY
+
+
+function convert() {
+  const hiddenArrow = document.getElementById("hidden-arrow");
+  let converted = false;
+  const amount = document.getElementById("amount").value;
+  console.log(amount);
+  const fromCurrency = document.getElementById("from-currency").value;
+  console.log(fromCurrency);
+  const toCurrency = document.getElementById("to-currency").value;
+  console.log(toCurrency);
+  
+  const requestURL2 = `https://api.exchangerate.host/convert?from=${fromCurrency}&to=${toCurrency}&amount=${amount}`;
+  const request = new XMLHttpRequest();
+  request.open('GET', requestURL2);
+  request.responseType = 'json';
+  request.send();
+  converted = true;
+  request.onload = function() {
+    const response = request.response;
+    const amountFrom = document.getElementById("amount-from").innerText = `${amount} ${fromCurrency}`;
+    const conversionResult = document.getElementById("conversion-result").innerText = `${response.result} ${toCurrency}`;
+    console.log(conversionResult);
+    if (converted == true) {
+      if (hiddenArrow.style.display = "hidden") {
+        hiddenArrow.style.display = "block";
+      }
+    }
+    
+  }
+
+  
+}
+
+
+
 
 
 
