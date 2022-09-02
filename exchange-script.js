@@ -18,7 +18,6 @@ request.onload = function() {
     let p = document.createElement("p");
     p.innerText = `${key} : ${value}`;
     currencyContainer.appendChild(p);
-    
   }
 }
 
@@ -37,6 +36,19 @@ function convert() {
   console.log(fromCurrency);
   const toCurrency = document.getElementById("to-currency").value;
   console.log(toCurrency);
+
+
+  //!DOES NOT WORK - TRIED TO TRIGGER CONVERSION ON PRESSING ENTER KEY
+  // let toCurrencyForTriggerButton = document.getElementById("to-currency");
+  // toCurrencyForTriggerButton.addEventListener("keypress", function(e) {
+  //   if (e.key == "Enter") {
+  //     document.getElementById("convert-img").click();
+  //   }
+  // })
+
+  // if (toCurrency.value == "enter"){
+  //   console.log('asfdjha')
+  // }
   
   const requestURL2 = `https://api.exchangerate.host/convert?from=${fromCurrency}&to=${toCurrency}&amount=${amount}`;
   const request = new XMLHttpRequest();

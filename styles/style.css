@@ -126,14 +126,13 @@
 }
 
 #exchange-1 {
-  height: 70%;
+  height: 200px;
 }
 
 .footer {
   color: #D1D1D1;
   text-align: center;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
+  margin-top: 30vh;
 }
 
 .logo {
