@@ -35,3 +35,18 @@ body div:nth-child(3) > h2 {
       display: none;
 }
 
+.my-button {
+      background-color: #D7C481;
+      border-radius: 10px;
+      padding: 5px;
+      border: 0;
+      color: #191919;
+      font-weight: 500;
+      transition: 0.1s ease-in-out;
+      cursor: pointer;
+}
+
+.my-button:hover {
+      color: #D7C481;
+      background-color: #191919;
+}

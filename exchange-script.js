@@ -24,6 +24,9 @@ request.onload = function() {
 
 //^ CONVERT FUNCTIONALITY
 
+function resetFields() {
+  location.reload();
+}
 
 function convert() {
   const hiddenArrow = document.getElementById("hidden-arrow");
@@ -46,15 +49,13 @@ function convert() {
     const amountFrom = document.getElementById("amount-from").innerText = `${amount} ${fromCurrency}`;
     const conversionResult = document.getElementById("conversion-result").innerText = `${response.result} ${toCurrency}`;
     console.log(conversionResult);
+    //! MAKE AN IF STATEMENT, IF THE INPUT FIELDS ARE EMPTY, LET THE USER KNOW. MAYBE MAKE A SEPARATE FUNCTION TO BE CALLED HERE
     if (converted == true) {
       if (hiddenArrow.style.display = "hidden") {
         hiddenArrow.style.display = "block";
       }
     }
-    
-  }
-
-  
+  }  
 }
 
 
