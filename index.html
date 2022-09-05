@@ -40,10 +40,27 @@
 							<input type="number" id="amount" class="jumbotron-input" />
 							<br />
 							<label for="from-currency">From</label>
-							<input type="text" id="from-currency" class="jumbotron-input" />
+							<input
+								list="currencyList"
+								type="text"
+								id="from-currency"
+								class="jumbotron-input"
+								autocomplete="off"
+							/>
+							<datalist id="currencyList">
+								<!--Append based on JS-->
+							</datalist>
 							<span class="convert-arrow">-></span>
 							<label for="to-currency">To</label>
-							<input type="text" id="to-currency" class="jumbotron-input" />
+							<input
+								list="currencyList-2"
+								type="text"
+								id="to-currency"
+								class="jumbotron-input"
+							/>
+							<datalist id="currencyList-2">
+								<!--Append based on JS-->
+							</datalist>
 							<br />
 							<img
 								src="img/convert-button.png"
