@@ -1,74 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Currency Exchange App</title>
-      <link rel="stylesheet" href="styles/style.css">
-      <link rel="icon" href="img/exchange-logo.png">
-</head>
-<body>
-      <!--! ADD COMMENTS ! -->
-      <!--^ TODAY'S EXCHANGE RATE-->
-      <img src="img/exchange-logo.png" alt="exchange logo" class="logo">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Currency Exchange App</title>
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="icon" href="img/exchange-logo.png" />
+	</head>
+	<body>
+		<!--! ADD COMMENTS ! -->
+		<!--^ TODAY'S EXCHANGE RATE-->
+		<img src="img/exchange-logo.png" alt="exchange logo" class="logo" />
 
-      <div>
-            <ul class="navbar">
-                  <li>
-                        <a href="#">
-                              HOME
-                        </a>
-                  </li>
-                  <li>
-                        <a href="#">
-                              HISTORICAL DATES
-                        </a>
-                  </li>
-                  <li>
-                        <a href="#">
-                              VAT RATES EU
-                        </a>
-                  </li>
-                  <li>
-                        <a href="#">
-                              ABOUT US
-                        </a>
-                  </li>
-            </ul>
-      </div>
+		<div>
+			<ul class="navbar">
+				<li>
+					<a href="#"> HOME </a>
+				</li>
+				<li>
+					<a href="#"> HISTORICAL DATES </a>
+				</li>
+				<li>
+					<a href="#"> VAT RATES EU </a>
+				</li>
+				<li>
+					<a href="#"> ABOUT US </a>
+				</li>
+			</ul>
+		</div>
 
-      <div class="container jumbotron">
-            <div class="jumb-container">
-                  <h4>CURRENCY CONVERTER</h4>
-                  <div id="converter-container">
-                        <input type="number" id="amount" class="jumbotron-input">
-                        <input type="text" id="from-currency" class="jumbotron-input">
-                        <span class="convert-arrow">-></span>
-                        <input type="text" id="to-currency" class="jumbotron-input">
-                        <img src="img/convert-button.png" alt="convert button" id="convert-img" onclick="convert()" title="click to convert">
-                  </div>
-                  <div id="converted-container">
-                        <p id="amount-from"></p>
-                        <p class="convert-arrow" id="hidden-arrow">-></p>
-                        <p id="conversion-result"></p>
-                        <button class="my-button" onclick="resetFields()">Retry</button>
-                  </div>
-            </div>
-            <div class="jumb-container">
-                  <img src="img/exchange-1.png" alt="exchange picture" id="exchange-1">
-            </div> 
-      </div>
+		<div class="container jumbotron">
+			<div class="jumb-container">
+				<div id="converter-container">
+					<form action="">
+						<fieldset class="converter-fieldset">
+							<legend>Currency-Converter</legend>
+							<label for="amount">Amount</label>
+							<input type="number" id="amount" class="jumbotron-input" />
+							<br />
+							<label for="from-currency">From</label>
+							<input type="text" id="from-currency" class="jumbotron-input" />
+							<span class="convert-arrow">-></span>
+							<label for="to-currency">To</label>
+							<input type="text" id="to-currency" class="jumbotron-input" />
+							<br />
+							<img
+								src="img/convert-button.png"
+								alt="convert button"
+								id="convert-img"
+								onclick="convert()"
+								title="click to convert"
+							/>
+						</fieldset>
+					</form>
+				</div>
+				<div id="converted-container">
+					<fieldset class="converter-fieldset">
+						<legend>Result</legend>
+						<button class="my-button" onclick="resetFields()">Retry</button>
+						<p id="amount-from"></p>
+						<p class="convert-arrow" id="hidden-arrow">-></p>
+						<p id="conversion-result"></p>
+					</fieldset>
+				</div>
+			</div>
+			<div class="jumb-container">
+				<img src="img/exchange-1.png" alt="exchange picture" id="exchange-1" />
+			</div>
+		</div>
 
-      <div class="container">
-            <div id="currency-container">
-                  <h2>TODAY'S RATE FOR RON</h2>
-            </div>
-      </div>
+		<div class="container">
+			<div id="currency-container">
+				<h2>TODAY'S RATE FOR RON</h2>
+			</div>
+		</div>
 
-      <div class="yellow-container"></div>
-      <div class="footer">Website made with Exchange Rate API <br> Andrei Barut © 2022</div>
-           
-      <script src="exchange-script.js"></script>
-</body>
+		<div class="yellow-container"></div>
+		<div class="footer">
+			Website made with Exchange Rate API <br />
+			Andrei Barut © 2022
+		</div>
+
+		<script src="exchange-script.js"></script>
+	</body>
 </html>

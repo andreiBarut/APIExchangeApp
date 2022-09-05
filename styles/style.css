@@ -27,7 +27,7 @@
 }
 
 #currency-container {
-  font-size: 60%;
+  font-size: 80%;
   height: 15vh;
   width: 40vw;
   overflow-y: scroll;
@@ -36,7 +36,7 @@
   text-align: center;
   border-radius: 10px;
   margin-top: 2vh;
-  color: #D1D1D1;
+  color: #d1d1d1;
   background-color: #262626;
   opacity: 0.9;
 }
@@ -46,13 +46,13 @@
 }
 
 #currency-container::-webkit-scrollbar-track {
-  background: #DDDDDD; /* color of the tracking area */
+  background: #dddddd; /* color of the tracking area */
 }
 
 #currency-container::-webkit-scrollbar-thumb {
   background-color: #262626; /* color of the scroll thumb */
   border-radius: 10px; /* roundness of the scroll thumb */
-  border: 3px solid #D7C481; /* creates padding around scroll thumb */
+  border: 3px solid #d7c481; /* creates padding around scroll thumb */
 }
 
 .jumbotron {
@@ -61,7 +61,7 @@
   margin: 0 auto;
   margin-top: 2vh;
   border-radius: 10px;
-  background-color: #DDDDDD;
+  background-color: #dddddd;
 }
 
 .yellow-container {
@@ -69,12 +69,13 @@
   top: 45vh;
   height: 40vh;
   width: 100vw;
-  background-color: #D7C481;
+  background-color: #d7c481;
   z-index: -1;
   background-image: url("../img/line-vector-pattern.png");
 }
 
-.container, .jumbotron {
+.container,
+.jumbotron {
   display: flex;
   flex-direction: row;
 }
@@ -86,7 +87,7 @@
 }
 
 #convert-img:hover {
-  background-color: #D7C481;
+  background-color: #d7c481;
   border-radius: 10px;
   padding: 2px;
 }
@@ -114,7 +115,6 @@
 
 #converter-container {
   text-align: center;
-  padding: 8vh 0 8vh 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -122,11 +122,25 @@
 
 #converted-container {
   text-align: center;
-  padding: 0 0 8vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#converted-container > .converter-fieldset {
+  height: 150px;
+  width: 150px;
+  padding: 0;
 }
 
 #exchange-1 {
   height: 200px;
+}
+
+.converter-fieldset {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .footer {
@@ -235,7 +249,7 @@ body div:nth-child(3) > h2 {
 }
 
 .my-button {
-  background-color: #D7C481;
+  background-color: #d7c481;
   border-radius: 10px;
   padding: 5px;
   border: 0;
@@ -246,6 +260,6 @@ body div:nth-child(3) > h2 {
 }
 
 .my-button:hover {
-  color: #D7C481;
+  color: #d7c481;
   background-color: #191919;
 }/*# sourceMappingURL=style.css.map */

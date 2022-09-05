@@ -1,52 +1,56 @@
-@import 'navbar.scss';
-@import 'containers.scss';
-@import 'variables.scss';
-@import 'footer.scss';
-@import 'logo.scss';
-@import 'inputs.scss';
-@import 'media-queries.scss';
+@import "navbar.scss";
+@import "containers.scss";
+@import "variables.scss";
+@import "footer.scss";
+@import "logo.scss";
+@import "inputs.scss";
+@import "media-queries.scss";
 
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+@import url("https://rsms.me/inter/inter.css");
+html {
+	font-family: "Inter", sans-serif;
+}
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+	html {
+		font-family: "Inter var", sans-serif;
+	}
 }
 
 * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-      background-color: #191919;
+	background-color: #191919;
 }
 
 body div:nth-child(3) > h2 {
-      text-align: center;
+	text-align: center;
 }
 
 .convert-arrow {
-      font-size: 2rem;
-      font-weight: bolder;
+	font-size: 2rem;
+	font-weight: bolder;
 }
 
 #hidden-arrow {
-      display: none;
+	display: none;
 }
 
 .my-button {
-      background-color: #D7C481;
-      border-radius: 10px;
-      padding: 5px;
-      border: 0;
-      color: #191919;
-      font-weight: 500;
-      transition: 0.1s ease-in-out;
-      cursor: pointer;
+	background-color: #d7c481;
+	border-radius: 10px;
+	padding: 5px;
+	border: 0;
+	color: #191919;
+	font-weight: 500;
+	transition: 0.1s ease-in-out;
+	cursor: pointer;
 }
 
 .my-button:hover {
-      color: #D7C481;
-      background-color: #191919;
+	color: #d7c481;
+	background-color: #191919;
 }

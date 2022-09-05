@@ -1,107 +1,119 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 #currency-container {
-      font-size: 60%;
-      height: 15vh;
-      width: 40vw;
-      overflow-y: scroll;
-      padding: 2vh;
-      margin: 0 auto;
-      text-align: center;
-      border-radius: 10px;
-      margin-top: $defaultTopMargin;
-      color: #D1D1D1;
-      background-color: #262626;
-      opacity: 0.9;
+	font-size: 80%;
+	height: 15vh;
+	width: 40vw;
+	overflow-y: scroll;
+	padding: 2vh;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: $defaultTopMargin;
+	color: #d1d1d1;
+	background-color: #262626;
+	opacity: 0.9;
 }
 
 #currency-container::-webkit-scrollbar {
-      width: 12px;               /* width of the entire scrollbar */
+	width: 12px; /* width of the entire scrollbar */
 }
 //! we will have to modify these colors to correspond to the figma design
 #currency-container::-webkit-scrollbar-track {
-      background: #DDDDDD;        /* color of the tracking area */
+	background: #dddddd; /* color of the tracking area */
 }
 
 #currency-container::-webkit-scrollbar-thumb {
-      background-color: #262626;    /* color of the scroll thumb */
-      border-radius: 10px;       /* roundness of the scroll thumb */
-      border: 3px solid #D7C481;  /* creates padding around scroll thumb */
+	background-color: #262626; /* color of the scroll thumb */
+	border-radius: 10px; /* roundness of the scroll thumb */
+	border: 3px solid #d7c481; /* creates padding around scroll thumb */
 }
 
 .jumbotron {
-      width: 45%;
-      height: 50%;
-      margin: 0 auto;
-      margin-top: $defaultTopMargin;
-      border-radius: 10px;
-      background-color: #DDDDDD;
+	width: 45%;
+	height: 50%;
+	margin: 0 auto;
+	margin-top: $defaultTopMargin;
+	border-radius: 10px;
+	background-color: #dddddd;
 }
 
 .yellow-container {
-      position: absolute;
-      top: 45vh;
-      height: 40vh;
-      width: 100vw;
-      background-color: #D7C481;
-      z-index: -1;
-      background-image: url("../img/line-vector-pattern.png");
+	position: absolute;
+	top: 45vh;
+	height: 40vh;
+	width: 100vw;
+	background-color: #d7c481;
+	z-index: -1;
+	background-image: url("../img/line-vector-pattern.png");
 }
 
-.container,.jumbotron {
-      display: flex;    
-      flex-direction: row;
-      // align-items: center;
+.container,
+.jumbotron {
+	display: flex;
+	flex-direction: row;
+	// align-items: center;
 }
 
 #convert-img {
-      height: 40px;
-      cursor: pointer;
-      transition: 0.1s ease-in-out;
+	height: 40px;
+	cursor: pointer;
+	transition: 0.1s ease-in-out;
 }
 
 #convert-img:hover {
-      background-color: #D7C481;
-      border-radius: 10px;
-      padding: 2px;
+	background-color: #d7c481;
+	border-radius: 10px;
+	padding: 2px;
 }
 
 .jumb-container {
-      padding-top: 5vh;
+	padding-top: 5vh;
 }
 
 .jumb-container > h4 {
-      text-align: center;
-      font-weight: 500;
+	text-align: center;
+	font-weight: 500;
 }
 
 .jumb-container:first-child {
-      width: 50%;
+	width: 50%;
 }
 
 .jumb-container:nth-child(2) {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 0;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 0;
 }
 
 #converter-container {
-      text-align: center;
-      padding: 8vh 0 8vh 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 #converted-container {
-      text-align: center;
-      padding: 0 0 8vh 0;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#converted-container > .converter-fieldset {
+	height: 150px;
+	width: 150px;
+	padding: 0;
 }
 
 #exchange-1 {
-      height: 200px;
+	height: 200px;
 }
 
-
+.converter-fieldset {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}

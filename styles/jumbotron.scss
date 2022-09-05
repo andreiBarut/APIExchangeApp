@@ -1,0 +1,10 @@
+@import 'variables.scss';
+
+.jumbotron {
+      width: 45vw;
+      height: 50vh;
+      margin: 0 auto;
+      margin-top: $defaultTopMargin;
+      border-radius: 2%;
+      background-color: #DDDDDD;
+}
