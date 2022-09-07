@@ -27,8 +27,8 @@
 }
 
 #currency-container {
-  font-size: 80%;
-  height: 15vh;
+  font-size: 85%;
+  height: 20vh;
   width: 40vw;
   overflow-y: scroll;
   padding: 2vh;
@@ -67,7 +67,7 @@
 .yellow-container {
   position: absolute;
   top: 45vh;
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
   background-color: #d7c481;
   z-index: -1;
