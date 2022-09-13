@@ -90,3 +90,17 @@ function convert() {
 }
 
 //^ HAMBURGER NAVBAR FUNCTIONALITY
+const hamburger = document.getElementById("hamburger");
+const navbar1 = document.getElementById("navbar-1");
+const bars = document.getElementById("bars");
+let clicked = 0;
+
+hamburger.addEventListener("click", () => {
+	navbar1.classList.toggle("show");
+	clicked++;
+	if (clicked % 2 != 0) {
+		bars.style.transform = "rotate(90deg)";
+	} else {
+		bars.style.transform = "rotate(0deg)";
+	}
+});

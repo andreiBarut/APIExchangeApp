@@ -45,6 +45,27 @@
 		display: none;
 	}
 
+	#navbar-1.show {
+		display: flex;
+		flex-direction: column;
+		background-color: #191919;
+
+		// flex-direction: column;
+	}
+
+	#navbar-1 li {
+		width: 20vw;
+		border: 0;
+		text-align: center;
+		background-color: transparent;
+		color: #191919 !important;
+		z-index: 100;
+	}
+
+	#navbar-1 li:hover {
+		background-color: #262626;
+	}
+
 	#navbar-2 {
 		display: flex;
 	}

@@ -9,11 +9,19 @@
 
 .hamburger {
   background-color: transparent !important;
-  color: #d1d1d1 !important;
+  color: #d1d1d1;
   border: 0 !important;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 0 !important;
   cursor: pointer;
   visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  background-color: #d7c481 !important;
+  color: #262626 !important;
+  border-radius: 20px;
 }
 
 .navbar li {
@@ -37,8 +45,11 @@
 
 #navbar-2 {
   flex-direction: row;
-  border: 2px solid red;
   display: none;
+}
+
+#bars {
+  transition: 0.1s ease-in-out;
 }
 
 #currency-container {
@@ -219,6 +230,22 @@
 @media screen and (max-width: 750px) {
   #navbar-1 {
     display: none;
+  }
+  #navbar-1.show {
+    display: flex;
+    flex-direction: column;
+    background-color: #191919;
+  }
+  #navbar-1 li {
+    width: 20vw;
+    border: 0;
+    text-align: center;
+    background-color: transparent;
+    color: #191919 !important;
+    z-index: 100;
+  }
+  #navbar-1 li:hover {
+    background-color: #262626;
   }
   #navbar-2 {
     display: flex;
