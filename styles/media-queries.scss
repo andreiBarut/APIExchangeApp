@@ -41,8 +41,17 @@
 }
 
 @media screen and (max-width: 750px) {
-	.navbar {
-		visibility: hidden;
+	#navbar-1 {
+		display: none;
+	}
+
+	#navbar-2 {
+		display: flex;
+	}
+
+	.hamburger {
+		visibility: visible;
+		text-align: center;
 	}
 
 	#exchange-1 {

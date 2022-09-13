@@ -1,9 +1,18 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style-type: none;
   margin-top: 2vh;
+}
+
+.hamburger {
+  background-color: transparent !important;
+  color: #d1d1d1 !important;
+  border: 0 !important;
+  font-size: 2rem;
+  cursor: pointer;
+  visibility: hidden;
 }
 
 .navbar li {
@@ -23,4 +32,9 @@
 .navbar a {
   text-decoration: none;
   color: #d1d1d1;
+}
+
+#navbar-2 {
+  flex-direction: row;
+  border: 2px solid red;
 }/*# sourceMappingURL=navbar.css.map */
