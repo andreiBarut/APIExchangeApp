@@ -1,28 +1,28 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .navbar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      list-style-type: none;
-      margin-top: $defaultTopMargin;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+	margin-top: $defaultTopMargin;
 }
 
 .navbar li {
-      padding: 3vh 0;
-      width: 12vw;
-      border-top: 5px solid #D7C481;
-      border-radius: 10px;
-      text-align: center;
-      background-color: #262626;
+	padding: 3vh 0;
+	width: 12vw;
+	border-top: 5px solid #d7c481;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #262626;
 }
 
 .navbar li:hover {
-      background-color: #484848;
-      transition: 0.3s ease-in-out;
+	background-color: #484848;
+	transition: 0.3s ease-in-out;
 }
 
 .navbar a {
-      text-decoration: none;
-      color: #D1D1D1;
+	text-decoration: none;
+	color: #d1d1d1;
 }

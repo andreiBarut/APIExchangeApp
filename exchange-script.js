@@ -73,16 +73,20 @@ function convert() {
 	converted = true;
 	request.onload = function () {
 		const response = request.response;
-		// const amountFrom = document.getElementById("amount-from").innerText = `${amount} ${fromCurrency}`;
+		const amountFrom = (document.getElementById(
+			"amount-from"
+		).innerText = `${amount} ${fromCurrency}`);
 		const conversionResult = (document.getElementById(
 			"conversion-result"
 		).innerText = `${response.result} ${toCurrency}`);
 		console.log(conversionResult);
 		//! MAKE AN IF STATEMENT, IF THE INPUT FIELDS ARE EMPTY, LET THE USER KNOW. MAYBE MAKE A SEPARATE FUNCTION TO BE CALLED HERE
-		if (converted == true) {
+		if (converted) {
 			if ((hiddenArrow.style.display = "hidden")) {
 				hiddenArrow.style.display = "block";
 			}
 		}
 	};
 }
+
+//^ HAMBURGER NAVBAR FUNCTIONALITY
