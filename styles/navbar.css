@@ -37,4 +37,5 @@
 #navbar-2 {
   flex-direction: row;
   border: 2px solid red;
+  display: none;
 }/*# sourceMappingURL=navbar.css.map */
