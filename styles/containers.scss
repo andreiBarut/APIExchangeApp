@@ -52,7 +52,7 @@
 .jumbotron {
 	display: flex;
 	flex-direction: row;
-	// align-items: center;
+	justify-content: center;
 }
 
 #convert-img {
@@ -116,4 +116,18 @@
 	padding: 10px;
 	margin: 10px;
 	border-radius: 10px;
+}
+
+.historical-fieldset {
+	text-align: center;
+}
+
+.historical-table {
+	text-align: center;
+	border: 1px solid blue;
+	margin: auto auto;
+}
+
+.historical-table td {
+	border: 2px solid red;
 }

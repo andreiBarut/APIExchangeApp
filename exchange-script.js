@@ -91,3 +91,31 @@ hamburger.addEventListener("click", () => {
 		bars.style.transform = "rotate(0deg)";
 	}
 });
+
+//^HISTORICAL DATES FUNCTIONALITY
+
+function getDates() {
+	const startDate = document.getElementById("start-date").value;
+	console.log(startDate);
+	const endDate = document.getElementById("end-date").value;
+	console.log(endDate);
+	const table = document.getElementById("historical-table");
+	const requestURL3 =
+		"https://api.exchangerate.host/timeseries?start_date=2020-01-01&end_date=2020-01-04&base=USD&symbols=RON";
+	const request = new XMLHttpRequest();
+	request.open("GET", requestURL3);
+	request.responseType = "json";
+	request.send();
+	request.onload = function () {
+		const response = request.response;
+		console.log(response.rates);
+		let tr = document.createElement("tr");
+		for (let i = 0; i < 3; i++) {
+			let td = document.createElement("td");
+			td.innerText = "something";
+			tr.appendChild(td);
+		}
+		table.appendChild(tr);
+	};
+	//! IN PROGRESS
+}

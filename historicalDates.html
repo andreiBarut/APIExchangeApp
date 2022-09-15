@@ -41,7 +41,31 @@
 		</div>
 
 		<div class="container jumbotron">
-			<div class="jumb-container"></div>
+			<div class="jumb-container">
+				<fieldset class="historical-fieldset">
+					<legend>Historical Dates</legend>
+					<label for="#">From</label>
+					<input type="date" id="start-date" />
+					<br />
+					<label for="#">To</label>
+					<input type="date" id="end-date" />
+					<br />
+					<img
+						src="img/convert-button.png"
+						alt="convert button"
+						id="convert-img"
+						onclick="getDates()"
+						title="click to convert"
+					/>
+					<table id="historical-table" class="historical-table">
+						<tr>
+							<td>Start Date</td>
+							<td>End Date</td>
+							<td>Rate</td>
+						</tr>
+					</table>
+				</fieldset>
+			</div>
 		</div>
 
 		<!--^ TODAY'S EXCHANGE RATE-->
