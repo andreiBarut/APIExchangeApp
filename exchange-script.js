@@ -99,23 +99,33 @@ function getDates() {
 	console.log(startDate);
 	const endDate = document.getElementById("end-date").value;
 	console.log(endDate);
-	const table = document.getElementById("historical-table");
-	const requestURL3 =
-		"https://api.exchangerate.host/timeseries?start_date=2020-01-01&end_date=2020-01-04&base=USD&symbols=RON";
+	const requestURL3 = `https://api.exchangerate.host/timeseries?start_date=${startDate}&end_date=${endDate}&base=USD&symbols=RON`;
 	const request = new XMLHttpRequest();
 	request.open("GET", requestURL3);
 	request.responseType = "json";
 	request.send();
 	request.onload = function () {
-		const response = request.response;
-		console.log(response.rates);
-		let tr = document.createElement("tr");
-		for (let i = 0; i < 3; i++) {
-			let td = document.createElement("td");
-			td.innerText = "something";
-			tr.appendChild(td);
+		const response = request.response.rates;
+		function displayData() {
+			let dateArr = [];
+			console.log(response);
+			for (let i in response) {
+				dateArr.push(response[i]);
+			}
+			for (let j in dateArr) {
+				let ul = document.getElementById("timeSeries-list");
+				let li = document.createElement("li");
+				li.innerHTML = Object.values(dateArr[j]);
+				console.log(li.innerText);
+				ul.appendChild(li);
+			}
 		}
-		table.appendChild(tr);
+		displayData();
 	};
-	//! IN PROGRESS
 }
+
+//! 1. OK, NOW MAKE A TALBE INSTEAD OF A LIST, WITH TWO COLUMNS, one is the date column, and one is the value column.
+
+//! 2. AFTER THIS, make sepparate scripts and learn how to import them into different html pages. So index would have this exchange script up until the time series / historical dates js code. And the historicalDates.html would have a different script
+
+//! 3. ALSO, change the name from historical dates to something else, because historical dates resembles another API call. Make sure the new name is something easy to understand.
