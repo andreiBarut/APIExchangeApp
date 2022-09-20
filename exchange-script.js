@@ -129,3 +129,5 @@ function getDates() {
 //! 2. AFTER THIS, make sepparate scripts and learn how to import them into different html pages. So index would have this exchange script up until the time series / historical dates js code. And the historicalDates.html would have a different script
 
 //! 3. ALSO, change the name from historical dates to something else, because historical dates resembles another API call. Make sure the new name is something easy to understand.
+
+//! 4. MAYBE, there is a need for async programming. Look into that. For example, we might need to import the hamburger menu script into each one, run that one first, and only after that run the request functions, and after them, we run the functionality per say, so three stages??
