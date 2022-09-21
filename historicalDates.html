@@ -40,15 +40,15 @@
 			</ul>
 		</div>
 
-		<div class="container jumbotron">
+		<div class="container jumbotron" id="historical-jumbotron">
 			<div class="jumb-container">
 				<fieldset class="historical-fieldset">
 					<legend>Historical Dates</legend>
 					<label for="#">From</label>
-					<input type="date" id="start-date" />
+					<input type="date" id="start-date" class="historical-input" />
 					<br />
 					<label for="#">To</label>
-					<input type="date" id="end-date" />
+					<input type="date" id="end-date" class="historical-input" />
 					<br />
 					<img
 						src="img/convert-button.png"
@@ -57,9 +57,12 @@
 						onclick="getDates()"
 						title="click to convert"
 					/>
-					<!-- <table id="historical-table" class="historical-table">
-						
-					</table> -->
+					<table id="historical-table" class="historical-table">
+						<tr>
+							<td>Date</td>
+							<td id="value-col"></td>
+						</tr>
+					</table>
 					<ul id="timeSeries-list"></ul>
 				</fieldset>
 			</div>

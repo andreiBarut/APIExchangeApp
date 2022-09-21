@@ -120,14 +120,45 @@
 
 .historical-fieldset {
 	text-align: center;
+	border-radius: 10px;
+}
+
+.historical-table,
+td {
+	// border: 2px solid black;
+	border-radius: 10px;
+	background-color: #d7c481;
+	margin: 0 auto;
+}
+
+td {
+	background-color: #ffffff;
+	padding: 5px;
+}
+td {
+	padding: 5px;
 }
 
 .historical-table {
-	text-align: center;
-	border: 1px solid blue;
-	margin: auto auto;
+	visibility: hidden;
+	margin-bottom: 10px;
 }
 
-.historical-table td {
-	border: 2px solid red;
+#historical-jumbotron {
+	height: 50vh;
+	overflow-y: scroll;
+}
+
+#historical-jumbotron::-webkit-scrollbar {
+	width: 12px; /* width of the entire scrollbar */
+}
+//! we will have to modify these colors to correspond to the figma design
+#historical-jumbotron::-webkit-scrollbar-track {
+	background: #dddddd; /* color of the tracking area */
+}
+
+#historical-jumbotron::-webkit-scrollbar-thumb {
+	background-color: #262626; /* color of the scroll thumb */
+	border-radius: 10px; /* roundness of the scroll thumb */
+	border: 3px solid #d7c481; /* creates padding around scroll thumb */
 }

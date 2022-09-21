@@ -99,6 +99,8 @@ function getDates() {
 	console.log(startDate);
 	const endDate = document.getElementById("end-date").value;
 	console.log(endDate);
+	const convertImg = document.getElementById("convert-img");
+	convertImg.style.visibility = "hidden";
 	const requestURL3 = `https://api.exchangerate.host/timeseries?start_date=${startDate}&end_date=${endDate}&base=USD&symbols=RON`;
 	const request = new XMLHttpRequest();
 	request.open("GET", requestURL3);
@@ -113,11 +115,18 @@ function getDates() {
 				dateArr.push(response[i]);
 			}
 			for (let j in dateArr) {
-				let ul = document.getElementById("timeSeries-list");
-				let li = document.createElement("li");
-				li.innerHTML = Object.values(dateArr[j]);
-				console.log(li.innerText);
-				ul.appendChild(li);
+				let table = document.getElementById("historical-table");
+				let valueCol = document.getElementById("value-col");
+				valueCol.innerText = "RON (for now)";
+				let tr = document.createElement("tr");
+				let td = document.createElement("td");
+				let td2 = document.createElement("td");
+				td.innerText = Object.keys(response)[j];
+				td2.innerText = Object.values(dateArr[j]);
+				tr.appendChild(td);
+				tr.appendChild(td2);
+				table.appendChild(tr);
+				table.style.visibility = "visible";
 			}
 		}
 		displayData();
