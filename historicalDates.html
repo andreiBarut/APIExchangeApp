@@ -43,11 +43,34 @@
 		<div class="container jumbotron" id="historical-jumbotron">
 			<div class="jumb-container">
 				<fieldset class="historical-fieldset">
-					<legend>Historical Dates</legend>
-					<label for="#">From</label>
+					<legend class="historical-legend">Historical Dates</legend>
+					<label for="from-currency">From</label>
+					<input
+						list="currencyList"
+						type="text"
+						id="from-currency"
+						class="jumbotron-input"
+						autocomplete="off"
+					/>
+					<datalist id="currencyList">
+						<!--Append based on JS-->
+					</datalist>
+					<br />
+					<label for="to-currency">To</label>
+					<input
+						list="currencyList-2"
+						type="text"
+						id="to-currency"
+						class="jumbotron-input"
+					/>
+					<datalist id="currencyList-2">
+						<!--Append based on JS-->
+					</datalist>
+					<br />
+					<label for="#">Start Date</label>
 					<input type="date" id="start-date" class="historical-input" />
 					<br />
-					<label for="#">To</label>
+					<label for="#">End Date</label>
 					<input type="date" id="end-date" class="historical-input" />
 					<br />
 					<img
@@ -57,13 +80,14 @@
 						onclick="getDates()"
 						title="click to convert"
 					/>
+					<br />
+					<button class="my-button" onclick="resetFields()">Retry</button>
 					<table id="historical-table" class="historical-table">
 						<tr>
 							<td>Date</td>
 							<td id="value-col"></td>
 						</tr>
 					</table>
-					<ul id="timeSeries-list"></ul>
 				</fieldset>
 			</div>
 		</div>

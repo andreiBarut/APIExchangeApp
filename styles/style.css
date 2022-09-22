@@ -177,8 +177,7 @@
 
 .historical-table,
 td {
-  border-radius: 10px;
-  background-color: #d7c481;
+  border-radius: 2px;
   margin: 0 auto;
 }
 
@@ -197,8 +196,10 @@ td {
 }
 
 #historical-jumbotron {
-  height: 50vh;
+  height: 100%;
   overflow-y: scroll;
+  width: 70%;
+  display: flex;
 }
 
 #historical-jumbotron::-webkit-scrollbar {
@@ -213,6 +214,10 @@ td {
   background-color: #262626; /* color of the scroll thumb */
   border-radius: 10px; /* roundness of the scroll thumb */
   border: 3px solid #d7c481; /* creates padding around scroll thumb */
+}
+
+.historical-legend {
+  margin-bottom: 10px;
 }
 
 .logo {

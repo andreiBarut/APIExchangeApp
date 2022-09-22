@@ -95,13 +95,17 @@ hamburger.addEventListener("click", () => {
 //^HISTORICAL DATES FUNCTIONALITY
 
 function getDates() {
+	const fromCurrency = document.getElementById("from-currency").value;
+	console.log(fromCurrency);
+	const toCurrency = document.getElementById("to-currency").value;
+	console.log(toCurrency);
 	const startDate = document.getElementById("start-date").value;
 	console.log(startDate);
 	const endDate = document.getElementById("end-date").value;
 	console.log(endDate);
 	const convertImg = document.getElementById("convert-img");
 	convertImg.style.visibility = "hidden";
-	const requestURL3 = `https://api.exchangerate.host/timeseries?start_date=${startDate}&end_date=${endDate}&base=USD&symbols=RON`;
+	const requestURL3 = `https://api.exchangerate.host/timeseries?start_date=${startDate}&end_date=${endDate}&base=${fromCurrency}&symbols=${toCurrency}`;
 	const request = new XMLHttpRequest();
 	request.open("GET", requestURL3);
 	request.responseType = "json";
@@ -117,12 +121,12 @@ function getDates() {
 			for (let j in dateArr) {
 				let table = document.getElementById("historical-table");
 				let valueCol = document.getElementById("value-col");
-				valueCol.innerText = "RON (for now)";
+				valueCol.innerText = `1 ${fromCurrency} =`;
 				let tr = document.createElement("tr");
 				let td = document.createElement("td");
 				let td2 = document.createElement("td");
 				td.innerText = Object.keys(response)[j];
-				td2.innerText = Object.values(dateArr[j]);
+				td2.innerText = Object.values(dateArr[j]) + " " + toCurrency;
 				tr.appendChild(td);
 				tr.appendChild(td2);
 				table.appendChild(tr);
@@ -133,7 +137,7 @@ function getDates() {
 	};
 }
 
-//! 1. OK, NOW MAKE A TALBE INSTEAD OF A LIST, WITH TWO COLUMNS, one is the date column, and one is the value column.
+//! 1. Add a new func on historical dates page, where you can compare to different dates
 
 //! 2. AFTER THIS, make sepparate scripts and learn how to import them into different html pages. So index would have this exchange script up until the time series / historical dates js code. And the historicalDates.html would have a different script
 

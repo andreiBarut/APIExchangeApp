@@ -126,8 +126,8 @@
 .historical-table,
 td {
 	// border: 2px solid black;
-	border-radius: 10px;
-	background-color: #d7c481;
+	border-radius: 2px;
+	// background-color: #d7c481;
 	margin: 0 auto;
 }
 
@@ -135,6 +135,7 @@ td {
 	background-color: #ffffff;
 	padding: 5px;
 }
+
 td {
 	padding: 5px;
 }
@@ -145,8 +146,10 @@ td {
 }
 
 #historical-jumbotron {
-	height: 50vh;
+	height: 100%;
 	overflow-y: scroll;
+	width: 70%;
+	display: flex;
 }
 
 #historical-jumbotron::-webkit-scrollbar {
@@ -161,4 +164,8 @@ td {
 	background-color: #262626; /* color of the scroll thumb */
 	border-radius: 10px; /* roundness of the scroll thumb */
 	border: 3px solid #d7c481; /* creates padding around scroll thumb */
+}
+
+.historical-legend {
+	margin-bottom: 10px;
 }
