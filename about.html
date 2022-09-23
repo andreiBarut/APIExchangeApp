@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Currency Exchange App</title>
-      <link rel="stylesheet" href="#">
-</head>
-<body>
-      
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Currency Exchange App</title>
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body>
+		<div>
+			<img src="img/exchange-logo.png" alt="exchange logo" class="logo" />
 
-      <script src="script.js"></script>
-</body>
+			<ul class="navbar" id="navbar-2">
+				<li class="hamburger" id="hamburger">
+					<i class="fa-solid fa-bars" id="bars"></i>
+				</li>
+			</ul>
+
+			<ul class="navbar" id="navbar-1">
+				<li>
+					<a href="index.html"> HOME </a>
+				</li>
+				<li>
+					<a href="historicalDates.html"> HISTORICAL DATES </a>
+				</li>
+				<li>
+					<a href="about.html"> ABOUT US </a>
+				</li>
+			</ul>
+		</div>
+
+		<!--^ CURRENCY CONVERTER -->
+
+		<div class="container jumbotron">
+			<div class="jumb-container">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat minima
+					doloribus aspernatur ex laudantium ipsam quibusdam saepe. Dolore
+					consequatur cupiditate modi quas distinctio voluptatibus blanditiis quod
+					necessitatibus ex consectetur?
+				</p>
+			</div>
+			<div class="jumb-container">
+				<img src="img/exchange-1.png" alt="exchange picture" id="exchange-1" />
+			</div>
+		</div>
+
+		<!--^ TODAY'S EXCHANGE RATE-->
+
+		<div class="container">
+			<div id="currency-container">
+				<h2>TODAY'S RATE FOR RON</h2>
+			</div>
+		</div>
+
+		<div class="yellow-container"></div>
+
+		<script src="exchange-script.js"></script>
+	</body>
 </html>
