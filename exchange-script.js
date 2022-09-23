@@ -137,9 +137,7 @@ function getDates() {
 	};
 }
 
-//! 1. Make historical dates look better
-
-//! 1.1.
+//! 3. Make the about page
 
 //! 2. AFTER THIS, make sepparate scripts and learn how to import them into different html pages. So index would have this exchange script up until the time series / historical dates js code. And the historicalDates.html would have a different script
 

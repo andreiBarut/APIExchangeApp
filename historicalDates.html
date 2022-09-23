@@ -40,7 +40,12 @@
 		<div class="container jumbotron" id="historical-jumbotron">
 			<div class="jumb-container">
 				<fieldset class="historical-fieldset">
-					<legend class="historical-legend">Historical Dates</legend>
+					<legend class="historical-legend">
+						Historical Dates
+						<pre></pre>
+						<i class="fa-solid fa-calendar-plus"></i>
+					</legend>
+
 					<label for="from-currency">From</label>
 					<input
 						list="currencyList"
@@ -52,6 +57,8 @@
 					<datalist id="currencyList">
 						<!--Append based on JS-->
 					</datalist>
+					<br />
+					<span class="convert-arrow">-></span>
 					<br />
 					<label for="to-currency">To</label>
 					<input
