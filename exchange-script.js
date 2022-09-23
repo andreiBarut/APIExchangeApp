@@ -137,7 +137,9 @@ function getDates() {
 	};
 }
 
-//! 1. Add a new func on historical dates page, where you can compare to different dates
+//! 1. Make historical dates look better
+
+//! 1.1.
 
 //! 2. AFTER THIS, make sepparate scripts and learn how to import them into different html pages. So index would have this exchange script up until the time series / historical dates js code. And the historicalDates.html would have a different script
 

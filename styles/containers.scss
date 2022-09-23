@@ -18,6 +18,7 @@
 #currency-container::-webkit-scrollbar {
 	width: 12px; /* width of the entire scrollbar */
 }
+
 //! we will have to modify these colors to correspond to the figma design
 #currency-container::-webkit-scrollbar-track {
 	background: #dddddd; /* color of the tracking area */
@@ -29,12 +30,16 @@
 	border: 3px solid #d7c481; /* creates padding around scroll thumb */
 }
 
+.container {
+	border-radius: 10px;
+}
+
 .jumbotron {
 	width: 45%;
 	height: 50%;
 	margin: 0 auto;
 	margin-top: $defaultTopMargin;
-	border-radius: 10px;
+	// border-radius: 100px;
 	background-color: #dddddd;
 }
 
@@ -53,6 +58,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	border-radius: 10px;
 }
 
 #convert-img {
@@ -69,6 +75,7 @@
 
 .jumb-container {
 	padding-top: 5vh;
+	// border-radius: 10px;
 }
 
 .jumb-container > h4 {
@@ -148,8 +155,10 @@ td {
 #historical-jumbotron {
 	height: 100%;
 	overflow-y: scroll;
+	overflow: visible;
 	width: 70%;
 	display: flex;
+	border-radius: 10px;
 }
 
 #historical-jumbotron::-webkit-scrollbar {
