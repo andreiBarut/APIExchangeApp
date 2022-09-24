@@ -226,9 +226,14 @@ td {
   margin-bottom: 10px;
 }
 
+.about-container {
+  padding: 1rem;
+}
+
 .logo {
   height: 50px;
-  left: 10vw;
+  margin-left: 2vw;
+  margin-top: 1vh;
 }
 
 #amount {
@@ -375,4 +380,8 @@ body div:nth-child(3) > h2 {
 .my-button:hover {
   color: #d7c481;
   background-color: #191919;
+}
+
+#exchange-logo-big {
+  box-shadow: #191919;
 }/*# sourceMappingURL=style.css.map */
