@@ -10,7 +10,7 @@
 
 .hamburger {
 	background-color: transparent !important;
-	color: #d1d1d1;
+	color: $thirdColor;
 	border: 0 !important;
 	font-size: 1.5rem;
 	padding: 0 !important;
@@ -20,18 +20,18 @@
 }
 
 .hamburger:hover {
-	background-color: #d7c481 !important;
-	color: #262626 !important;
+	background-color: $secondaryColor !important;
+	color: $mainColor !important;
 	border-radius: 20px;
 }
 
 .navbar li {
 	padding: 3vh 0;
 	width: 12vw;
-	border-top: 5px solid #d7c481;
+	border-top: 5px solid $secondaryColor;
 	border-radius: 10px;
 	text-align: center;
-	background-color: #262626;
+	background-color: $mainColor;
 }
 
 .navbar li:hover {
@@ -41,7 +41,7 @@
 
 .navbar a {
 	text-decoration: none;
-	color: #d1d1d1;
+	color: $thirdColor;
 }
 
 #navbar-2 {

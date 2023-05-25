@@ -10,8 +10,8 @@
 	text-align: center;
 	border-radius: 10px;
 	margin-top: $defaultTopMargin;
-	color: #d1d1d1;
-	background-color: #262626;
+	color: $thirdColor;
+	background-color: $mainColor;
 	opacity: 0.9;
 }
 
@@ -21,13 +21,13 @@
 
 //! we will have to modify these colors to correspond to the figma design
 #currency-container::-webkit-scrollbar-track {
-	background: #dddddd; /* color of the tracking area */
+	background: $thirdColor; /* color of the tracking area */
 }
 
 #currency-container::-webkit-scrollbar-thumb {
-	background-color: #262626; /* color of the scroll thumb */
+	background-color: $mainColor; /* color of the scroll thumb */
 	border-radius: 10px; /* roundness of the scroll thumb */
-	border: 3px solid #d7c481; /* creates padding around scroll thumb */
+	border: 3px solid $secondaryColor; /* creates padding around scroll thumb */
 }
 
 .container {
@@ -40,7 +40,7 @@
 	margin: 0 auto;
 	margin-top: $defaultTopMargin;
 	// border-radius: 100px;
-	background-color: #dddddd;
+	background-color: $thirdColor;
 }
 
 .yellow-container {
@@ -48,7 +48,7 @@
 	top: 45vh;
 	height: 50vh;
 	width: 100vw;
-	background-color: #d7c481;
+	background-color: $secondaryColor;
 	z-index: -1;
 	background-image: url("../img/line-vector-pattern.png");
 }
@@ -68,7 +68,7 @@
 }
 
 #convert-img:hover {
-	background-color: #d7c481;
+	background-color: $secondaryColor;
 	border-radius: 10px;
 	padding: 2px;
 }
@@ -134,7 +134,7 @@
 td {
 	// border: 2px solid black;
 	border-radius: 2px;
-	// background-color: #d7c481;
+	// background-color: $secondaryColor;
 	margin: 0 auto;
 }
 
@@ -166,13 +166,13 @@ td {
 }
 //! we will have to modify these colors to correspond to the figma design
 #historical-jumbotron::-webkit-scrollbar-track {
-	background: #dddddd; /* color of the tracking area */
+	background: $thirdColor; /* color of the tracking area */
 }
 
 #historical-jumbotron::-webkit-scrollbar-thumb {
 	background-color: #262626; /* color of the scroll thumb */
 	border-radius: 10px; /* roundness of the scroll thumb */
-	border: 3px solid #d7c481; /* creates padding around scroll thumb */
+	border: 3px solid $secondaryColor; /* creates padding around scroll thumb */
 }
 
 .historical-legend {

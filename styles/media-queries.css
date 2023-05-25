@@ -16,7 +16,7 @@
     display: none;
   }
   .container,
-.jumbotron {
+  .jumbotron {
     flex-direction: column;
     align-items: center;
   }
@@ -63,7 +63,7 @@
     display: none;
   }
   .container,
-.jumbotron {
+  .jumbotron {
     flex-direction: column;
     align-items: center;
   }
