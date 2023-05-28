@@ -1,8 +1,3 @@
-//^ INDEX FUNCTIONALITY (HOMEPAGE)- TODAY'S RATE
-
-//^CURRENCY CONTAINER (this is after the convert functionality in the page layout)
-
-//! here we will use the input from the user
 const currencyContainer = document.getElementById("currency-container");
 const requestURL1 = `https://api.exchangerate.host/latest?base=RON`;
 const request = new XMLHttpRequest();
@@ -10,16 +5,17 @@ request.open("GET", requestURL1);
 request.responseType = "json";
 request.send();
 
-// set the datalist options according to API
 request.onload = function () {
 	const response = request.response;
 
+	//TODAY's RATE CONTAINER - set today's rate for RON
 	for (const [key, value] of Object.entries(response.rates)) {
 		let p = document.createElement("p");
 		p.innerText = `${key} : ${value}`;
 		currencyContainer.appendChild(p);
 	}
 
+	// set the datalist options according to API
 	for (let i in request.response.rates) {
 		console.log(i);
 		let dataList = document.getElementById("currencyList");
@@ -100,20 +96,22 @@ function getDates() {
 	request.onload = function () {
 		const response = request.response.rates;
 		function displayData() {
-			let dateArr = [];
-			console.log(response);
-			for (let i in response) {
-				dateArr.push(response[i]);
-			}
-			for (let j in dateArr) {
+			const entries = Object.entries(response);
+			console.log(entries);
+			for (let j of entries) {
 				let table = document.getElementById("historical-table");
 				let valueCol = document.getElementById("value-col");
 				valueCol.innerText = `1 ${fromCurrency} =`;
 				let tr = document.createElement("tr");
 				let td = document.createElement("td");
 				let td2 = document.createElement("td");
-				td.innerText = Object.keys(response)[j];
-				td2.innerText = Object.values(dateArr[j]) + " " + toCurrency;
+				td.innerText = j[0];
+				console.log(j);
+
+				td2.innerText =
+					Number(Object.entries(j[1]).join("").split(",")[1]).toFixed(2) +
+					toCurrency;
+				console.log(Object.entries(j[1]));
 				tr.appendChild(td);
 				tr.appendChild(td2);
 				table.appendChild(tr);
